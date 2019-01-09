@@ -1,0 +1,42 @@
+<!-- <h1>
+  {{title}}
+</h1> -->
+<div class="container">
+     <div class="row">
+         <table class="table">
+             <thead class="thead-inverse">
+             <tr>
+                 <th class="text-center">Emp Name</th>
+                 <th class="text-center">ID</th>
+                 <th class="text-center">Emp Age</th>
+                 <th class="text-center">Em Salary</th>
+             </tr>
+             </thead>
+             <tbody>
+<tr *ngFor="let post of users">
+                 <td class="text-center" style="width: 15px;">{{post.employee_name}}</td>
+                 <td class="text-center" style="width: 15px;">{{post.id}}</td>
+                 <td class="text-center" style="width: 200px;">{{post.employee_age}}</td>
+                 <td class="text-center">{{post.employee_salary}}</td>
+             </tr>
+
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+<!-- <div *ngIf="(users | async); let user; else loading">
+  <h2>{{user.employee_name}}</h2>
+  <dl>
+    <dt>Age:</dt>
+    <dd>{{user.age}}</dd>
+
+    <dt>Height:</dt>
+    <dd>{{user.height}}</dd>
+
+    <dt>Mass:</dt>
+    <dd>{{user.mass}}</dd>
+
+    <dt>Home World:</dt>
+    <dd>{{user.homeWorld}}</dd>
+  </dl>
+</div> -->
