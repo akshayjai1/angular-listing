@@ -8,10 +8,7 @@ import {UserServiceService} from './user-service.service';
   providers: [UserServiceService]
 })
 export class AppComponent {
-  constructor(private userService: UserServiceService){
-
-  }
-  users = [];
-  temp = this.userService.getData().then(res => {this.users = this.userService.users});
+  constructor(){}
+    // .then(res => { this.users = this.userService.users });
   //title = this.userService.users;
 }
